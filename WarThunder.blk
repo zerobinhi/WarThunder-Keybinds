@@ -1,5 +1,6 @@
 controls{
   version:i=5
+  appliedFallbacksVer:i=3
 
   basePresetPaths{
     default:t="config/hotkeys/hotkey.keyboard_ver1.blk"
@@ -83,6 +84,10 @@ controls{
 
     ID_CONTINUE{
       keyboardKey:i=57
+    }
+
+    ID_CONTROL_MODE_HUMAN_UAV{
+      keyboardKey:i=35
     }
 
     ID_COUNTERMEASURES_CHAFF{
@@ -193,10 +198,6 @@ controls{
       keyboardKey:i=16
     }
 
-    ID_PTT{
-      keyboardKey:i=157
-    }
-
     ID_RANGEFINDER{
       mouseButton:i=5
     }
@@ -224,6 +225,14 @@ controls{
 
     ID_SCREENSHOT{
       keyboardKey:i=42
+      keyboardKey:i=183
+    }
+
+    ID_SCREENSHOT{
+      keyboardKey:i=183
+    }
+
+    ID_SCREENSHOT{
       keyboardKey:i=183
     }
 
@@ -481,6 +490,46 @@ controls{
       keyboardKey:i=31
     }
 
+    human_uav_climb_rangeMax{
+      keyboardKey:i=42
+    }
+
+    human_uav_climb_rangeMin{
+      keyboardKey:i=29
+    }
+
+    human_uav_pitch_rangeMax{
+      keyboardKey:i=31
+    }
+
+    human_uav_pitch_rangeMin{
+      keyboardKey:i=17
+    }
+
+    human_uav_roll_rangeMax{
+      keyboardKey:i=32
+    }
+
+    human_uav_roll_rangeMin{
+      keyboardKey:i=30
+    }
+
+    human_uav_throttle_rangeMax{
+      keyboardKey:i=42
+    }
+
+    human_uav_throttle_rangeMin{
+      keyboardKey:i=29
+    }
+
+    human_uav_yaw_rangeMax{
+      keyboardKey:i=18
+    }
+
+    human_uav_yaw_rangeMin{
+      keyboardKey:i=16
+    }
+
     sensor_cue_x_rangeMax{
       mouseButton:i=2
       keyboardKey:i=32
@@ -529,6 +578,11 @@ controls{
       mouseAxisId:i=-1
     }
 
+    human_uav_roll{
+      innerDeadzone:r=0
+      nonlinearity:r=1
+    }
+
     throttle{
       mouseAxisId:i=-1
     }
@@ -568,6 +622,7 @@ settings{
   replayCameraWiggle:r=1
   zoomSens:r=0
   mouseSens:r=0.5
+  humanMouseSens:r=0.5
   mouseAimSens:r=0.5
   gunnerViewSens:r=0.5
   gunnerViewZoomSens:r=1
@@ -619,6 +674,7 @@ settings{
   invertX:b=no
   invertT:b=no
   invertYTank:b=no
+  invertYHuman:b=no
   invertYShip:b=no
   invertYHelicopter:b=no
   invertYHelicopterGunner:b=no
